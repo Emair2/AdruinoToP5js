@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.28/lib/p5.serialport.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="lib/ethers-5.6.umd.min.js"></script>
+    <script src="abi.js" defer></script>
+    <script src="main.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>N0thing</title>
+  </head>
+  
+  <body>
+    <main>
+    </main>
+      <div id="player">
+        <h1>N0thing</h1>
+        <p>Unlock specific functionality if you possess a certain NFT.</p>
+        <hr>
+        <h1>The name is Nothing</h1>
+        <h2 id="VIP"></h2>
+        <div class="bg"></div>
+        
+      <script src="sketch.js"></script>
+
+
+      <div id="initContainer">
+        <h1>Token-Gated Site</h1>
+        <p>Unlock specific functionality if you possess a <strong>PARTYMODE</strong> NFT.</p>
+        <hr>
+        <div class="button-container">
+          <button id="connectButton">Connect</button>
+          <span id="loadingIconConnect" class="loading-icon"></span>
+        </div>
+        
+        <p>
+          <strong>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</span>
+        </p>
+        <p>
+          <strong>Connected Wallet:</strong> <span id="connectedWallet">[No wallet connected]</span>
+        </p>
+    
+        <button id="engagePartyMode">Enter Party Mode</button>
+        <div id="sorry">Sorry, looks you don't have a PARTYMODE token ¯\_(ツ)_/¯</div>
+      </div>
+  </body>
+
+</html>
