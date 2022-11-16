@@ -22,9 +22,32 @@
     <p>Please sit and watch</p>
     <video src="CITY.mp4" width="60%" controls>
     </video>
-    
-  </div>
+
+
+    <button id="showPopup" onclick="showPopup()">弹出</button>
+    <div id="overlay">
+      <div class="popup">
+        <p class="popup_title">提示</p>
+        <p class="popup_content">How do you feel this work？</p>
+        <div class="popup_btn">
+          <button class="GoodBtn" onclick="hidePopup()">Shit</button>
+          <button class="BadBtn" onclick="hidePopup()">The shit</button>
+        </div>
+      </div>
+    </div>
   
+
+    <p>A  
+        <button onclick="layer.confirm('Do you like this work?', {skin:"demo-class", title: 'tips', btn: ['sure', 'cancel']})">A01</button>  
+        
+        <button>A02</button>  <button>A03</button>  <button>A04</button>  <button>A05</button>  <button>A06</button>  <button>A07</button>  <button>A08</button>  <button>A09</button>  <button>A10</button> A</p>
+
+    <p>B  <button>B01</button>  <button>B02</button>  <button>B03</button>  <button>B04</button>  <button>B05</button>  <button>B06</button>  <button>B07</button>  <button>B08</button>  <button>B09</button>  <button>B10</button> B</p>
+
+    <p>C  <button>C01</button>  <button>C02</button>  <button>C03</button>  <button>C04</button>  <button>C05</button>  <button>C06</button>  <button>C07</button>  <button>C08</button>  <button>C09</button>  <button>C10</button> C</p>
+
+
+</div>
 </body>
 
 </html>
